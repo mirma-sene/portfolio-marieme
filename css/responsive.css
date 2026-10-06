@@ -1,0 +1,474 @@
+/* =========================================================
+   TABLETTES
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .nav-links {
+        gap: 18px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        text-align: center;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-description {
+        max-width: 700px;
+    }
+
+    .hero-image-placeholder {
+        min-height: 400px;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .about-content {
+    grid-template-columns: 1fr;
+
+    gap: 50px;
+}
+
+    .skills-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    .achievements-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+}
+
+
+/* =========================================================
+   TÉLÉPHONES
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    /* ---------- Navigation ---------- */
+.section-description {
+    font-size: 0.92rem;
+}
+
+.skill-category {
+    min-height: auto;
+    padding: 25px;
+}
+
+.skills-note {
+    align-items: flex-start;
+    padding: 20px;
+}
+    .navbar {
+        min-height: 70px;
+        padding: 0 20px;
+    }
+
+    .logo {
+        font-size: 1rem;
+    }
+
+    .nav-links {
+        display: none;
+    }
+   .nav-links.active {
+    display: flex;
+
+    position: absolute;
+
+    top: 70px;
+    left: 20px;
+    right: 20px;
+
+    padding: 25px;
+
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 20px;
+
+    background: rgba(25, 20, 38, 0.97);
+
+    border: 1px solid var(--border);
+
+    border-radius: 20px;
+
+    box-shadow: var(--shadow);
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    animation: mobileMenuAppear 0.3s ease forwards;
+}
+@keyframes mobileMenuAppear {
+
+    from {
+        opacity: 0;
+        transform: translateY(-10px) scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+   .menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+
+    border-radius: 14px;
+
+    background: rgba(192, 132, 252, 0.08);
+
+    color: var(--purple-light);
+
+    border: 1px solid rgba(192, 132, 252, 0.2);
+
+    font-size: 1.1rem;
+
+    cursor: pointer;
+
+    transition: var(--transition);
+}
+
+
+.menu-toggle:active {
+    transform: scale(0.92);
+}
+
+.menu-toggle:hover {
+    background: rgba(192, 132, 252, 0.15);
+
+    border-color: rgba(192, 132, 252, 0.4);
+
+    transform: scale(1.05);
+}
+
+
+    /* ---------- Sections ---------- */
+
+    .section {
+        padding: 85px 20px;
+    }
+
+    .section-header {
+        margin-bottom: 40px;
+    }
+
+
+    /* ---------- Hero ---------- */
+
+    .hero {
+        min-height: auto;
+
+        padding: 120px 20px 70px;
+
+        gap: 45px;
+    }
+
+    .hero h1 {
+        font-size: clamp(2.8rem, 15vw, 4.5rem);
+
+        letter-spacing: -2px;
+    }
+
+    .hero h2 {
+        font-size: 1.15rem;
+    }
+
+    .hero-description {
+        font-size: 0.95rem;
+    }
+
+    .hero-buttons {
+        width: 100%;
+
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+   .hero-visual {
+    min-height: 400px;
+}
+
+.hero-card {
+    min-height: 430px;
+    padding: 25px;
+}
+
+.hero-initials {
+    font-size: 5rem;
+}
+
+.hero-code {
+    font-size: 0.65rem;
+}
+
+
+    /* ---------- Compétences ---------- */
+    .about-content {
+    gap: 35px;
+}
+
+.about-intro {
+    font-size: 1.1rem !important;
+}
+
+.profile-card {
+    padding: 25px;
+}
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-category {
+        padding: 25px;
+    }
+
+
+    /* ---------- Projets ---------- */
+
+    .project-content {
+        padding: 25px;
+    }
+
+    .project-image {
+        min-height: 200px;
+    }
+    .project-image img {
+    height: 200px;
+}
+
+    .project-links {
+        flex-direction: column;
+    }
+
+    .project-links .btn {
+        width: 100%;
+    }
+.project-filters {
+    gap: 8px;
+}
+
+.filter-btn {
+    font-size: 0.75rem;
+    padding: 9px 13px;
+}
+
+.project-content {
+    padding: 25px;
+}
+
+.project-top {
+    align-items: flex-start;
+}
+
+.project-links {
+    flex-wrap: wrap;
+}
+
+
+    /* ---------- Certifications ---------- */
+
+    .achievements-container {
+        grid-template-columns: 1fr;
+    }
+
+    .education-card {
+    padding: 25px;
+}
+
+.education-main {
+    grid-template-columns: 1fr;
+    gap: 18px;
+}
+
+.education-icon {
+    width: 48px;
+    height: 48px;
+}
+
+.education-date {
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.achievements-container {
+    grid-template-columns: 1fr;
+}
+.creations-grid {
+    grid-template-columns: 1fr;
+}
+
+.creation-image {
+    min-height: 260px;
+}
+
+.creation-info {
+    padding: 20px;
+}
+.certificate-placeholder {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+    /* ---------- Parcours ---------- */
+
+    .journey-content {
+        grid-template-columns: 1fr;
+    }
+    .journey-timeline::before {
+    left: 22px;
+}
+
+.journey-item {
+    grid-template-columns: 45px 1fr;
+    gap: 18px;
+}
+
+.journey-marker {
+    width: 45px;
+    height: 45px;
+    border-radius: 14px;
+}
+
+.journey-content h3 {
+    font-size: 1.2rem;
+}
+
+.journey-content p {
+    font-size: 0.88rem;
+}
+
+.journey-future {
+    margin-left: 63px;
+    padding: 20px;
+}
+
+
+    /* ---------- Apprentissage ---------- */
+
+   .learning-grid {
+    grid-template-columns: 1fr;
+}
+
+.learning-card {
+    min-height: 240px;
+}
+
+.learning-intro h3 {
+    font-size: 1.5rem;
+}
+
+.learning-footer {
+    align-items: flex-start;
+    padding: 20px;
+}
+
+    /* ---------- Contact ---------- */
+
+    .contact-form .btn {
+        width: 100%;
+    }
+    .contact-grid {
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+}
+
+.contact-form-wrapper {
+    padding: 25px;
+}
+
+.form-row {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+}
+
+.back-to-top {
+    right: 18px;
+    bottom: 18px;
+
+    width: 44px;
+    height: 44px;
+
+    border-radius: 13px;
+}
+
+.success-page {
+    padding: 20px;
+}
+
+.success-card {
+    padding: 40px 25px;
+}
+
+.success-icon {
+    width: 60px;
+    height: 60px;
+}
+    /* ---------- Footer ---------- */
+
+.footer {
+    padding: 40px 20px 25px;
+}
+
+.footer-content {
+    grid-template-columns: 1fr;
+
+    gap: 25px;
+
+    padding-bottom: 30px;
+}
+
+.footer-bottom {
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+}
+
+
+/* =========================================================
+   PETITS TÉLÉPHONES
+   ========================================================= */
+
+@media (max-width: 420px) {
+
+    .hero h1 {
+        font-size: 2.7rem;
+    }
+
+    .section-header h2 {
+        font-size: 2rem;
+    }
+}
